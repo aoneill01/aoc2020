@@ -14,5 +14,5 @@ export default async function getInput(day, separator = '\n') {
   const text = await response.text()
 
   const lines = text.split(separator)
-  return lines.slice(0, lines.length - 1)
+  return lines[lines.length - 1] === '' ? lines.slice(0, lines.length - 1) : lines
 }
