@@ -17,6 +17,6 @@ console.log('Day 17')
 await import('./day17-1.js')
 await import('./day17-2.js')
 
-for (let day = 18; day <= 24; day++) {
+for (let day = 18; day <= 25; day++) {
   await singleFileDay(day)
 }
